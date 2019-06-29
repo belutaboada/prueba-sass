@@ -1,0 +1,51 @@
+// Nesting
+
+
+//Máximo 2 llaves, si tenés 3 te pasaste
+.cabecera {
+    background-color: pink;
+h2{
+    color: hotpink;
+}
+
+p{
+    a {
+        text-decoration: none;
+    }
+}
+
+a {
+    color: rebeccapurple;
+    // Con & evitamos el espacio
+    &:hover {
+        color: yellow;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    //OJO CON ESTO!
+    background-color: orange;
+}
+
+} //Esto cierra cabecera
+
+
+//Nesting con nombres de clases
+
+.nav {
+    background-color: yellow;
+
+    &-lista {
+        display: flex;
+        list-style: none;
+        padding: 0;
+
+    &_item {
+        flex-grow: 1;
+        padding: 5px;
+    }
+    }
+
+
+}

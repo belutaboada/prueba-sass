@@ -1,0 +1,34 @@
+// estilos.scss
+/* Hola CSS!*/
+
+:root {
+    --verdeclaro: greenyellow;
+}
+
+$verde: green;
+
+body {
+    background-color: $verde;
+}
+
+h1 {
+    transform:scaleX(-1);
+    color: $verde;
+    background-color: var(--verdeclaro)
+}
+
+/*  Con esto estandarizamos las medidas con variables. 
+    En css no se puede usar las variables dentro de la query
+    por eso usamos variables de Sass.
+
+    Si puedo usar variables de Css uso primero estas.
+*/
+
+$m768: 768px;
+$m1200: 1200px;
+
+@media (max-width: $m768) {
+    body {
+        background-color: pink;
+    }
+}

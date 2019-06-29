@@ -1,0 +1,22 @@
+// Mixins.sccs
+
+@mixin mensaje($color) {
+    padding:10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: $color;
+    
+}
+
+.error {
+    @include mensaje(red);
+}
+
+.info {
+    @include mensaje(yellow);
+}
+
+.ok {
+    @include mensaje(green);
+}
